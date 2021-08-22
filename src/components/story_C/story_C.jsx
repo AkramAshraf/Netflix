@@ -1,9 +1,8 @@
-import { Component } from "react";
 import classes from "./story_C.module.sass";
 import Textfit from "react-textfit";
 import ReactPlayer from "react-player";
-class Story extends Component {
-  render() {
+const Story=(props)=>{
+
     return (
       <section
         className={`${classes.storyItem} text-light border-top border-5 border-dark`}
@@ -18,13 +17,13 @@ class Story extends Component {
               <article
                 className={`${classes.article} mb-3 d-flex flex-column justify-content-center`}
               >
-                <Textfit min="20px">
+                <Textfit>
                   <h1 className="col-md-fs-3 fw-bolder">
-                    {this.props.story_data["story-article-H"]}
+                    {props.story_data["story-article-H"]}
                   </h1>
                 </Textfit>
-                <Textfit min="1rem" style={{ width: "90%", margin: "0 auto" }}>
-                  <p>{this.props.story_data["story-article-P"]}</p>
+                <Textfit style={{ width: "90%", margin: "0 auto" }}>
+                  <p>{props.story_data["story-article-P"]}</p>
                 </Textfit>
               </article>
             </div>
@@ -32,7 +31,7 @@ class Story extends Component {
               className={`storyPresentation col-sm-12 col-lg-5 position-relative`}
             >
               <img
-                src={this.props.story_data["story-presentation-img"]}
+                src={props.story_data["story-presentation-img"]}
                 alt=""
                 className=""
                 style={{
@@ -49,10 +48,10 @@ class Story extends Component {
                 playing
                 muted // must for chrome
                 loop
-                width={this.props.story_data["width"]}
+                width={props.story_data["width"]}
                 height="auto"
-                style={this.props.story_data["story-video-style"]}
-                url={this.props.story_data["story-presentation-video"]}
+                style={props.story_data["story-video-style"]}
+                url={props.story_data["story-presentation-video"]}
               />
             </div>
           </div>
@@ -60,6 +59,5 @@ class Story extends Component {
       </section>
     );
   }
-}
 
 export default Story;

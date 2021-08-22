@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
 class Progress extends Component {
-  state = {};
-
   componentDidMount() {
     window.addEventListener("scroll", () => {
       let $Y1 = window.pageYOffset,

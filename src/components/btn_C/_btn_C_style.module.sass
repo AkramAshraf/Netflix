@@ -1,8 +1,14 @@
 .main_btn
     background: var(--bgColor,#e50914)
-    font-size: var(--fontSize, 1rem)
-    padding: 1.5% 3%
+    white-space: nowrap
+    border-radius: 0
     color:#fff
+    flex: 0 1 30%
+    max-width: 100px
+    border: none
+    min-width: fit-content
+    font-size: calc(.5rem + 1vw)
+    padding: calc(.5rem + 0.3vw)
     transition: transform .3s ease-in-out
     &:hover, &:focus, &:focus+.btn
         color: #fff
