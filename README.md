@@ -27,4 +27,8 @@
 ```
 
 2. **Select box**
-```<selectBox selectOptions{{langs: [langs list separated by comma]}}/>```
+```<selectBox 
+        selectOptions={{
+            langs: [langs list separated by comma]
+            }}
+          />```
