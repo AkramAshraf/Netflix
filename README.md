@@ -22,13 +22,13 @@
         bgFade: 'true|false',
         btnNum: number,
         col: "col-4"
-        }}
-        />
+      }}
+     />
 ```
 
 2. **Select box**
 ```<SelectBox 
     selectOptions={{
         langs: [langs list separated by comma]
-        }}
-        />```
+       }}
+      />```
