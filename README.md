@@ -32,4 +32,3 @@
         langs: [langs list separated by comma]
        }}
       />
-      ```
