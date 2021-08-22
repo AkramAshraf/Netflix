@@ -14,21 +14,21 @@
 1. __Btn:__
 ```<Btn
     btn_data={{
-      content: "Any text",
-      icon: "icon classes",
-      iconDisplacement: "true|false",
-      bgColor: "color",
-      fontSize: "number with unit",
-      bgFade: 'true|false',
-      btnNum: number,
-      col: "col-4"
-    }}
-  />
+        content: "Any text",
+        icon: "icon classes",
+        iconDisplacement: "true|false",
+        bgColor: "color",
+        fontSize: "number with unit",
+        bgFade: 'true|false',
+        btnNum: number,
+        col: "col-4"
+        }}
+        />
 ```
 
 2. **Select box**
-```<selectBox 
-        selectOptions={{
-            langs: [langs list separated by comma]
-            }}
-          />```
+```<SelectBox 
+    selectOptions={{
+        langs: [langs list separated by comma]
+        }}
+        />```
