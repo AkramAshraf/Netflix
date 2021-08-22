@@ -1,0 +1,16 @@
+.main_btn
+    background: var(--bgColor,#e50914)
+    font-size: var(--fontSize, 1rem)
+    padding: 1.5% 3%
+    color:#fff
+    transition: transform .3s ease-in-out
+    &:hover, &:focus, &:focus+.btn
+        color: #fff
+        box-shadow: none
+        .iconDisplacement
+            display: inline-block
+            transform: translateX(60%)
+            transition: all .3s ease-in-out
+.bgFade
+    &:hover
+        box-shadow: inset 0px 0px 0px 50px #ffffff59

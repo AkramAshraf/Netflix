@@ -1,0 +1,8 @@
+$colorSet: (#10cab7, #3ef, #eae, #f3f)
+@use "sass:math"
+.svgIconNetflixBrand
+    width: clamp(70px, 100px,200px)
+    fill:#e50914
+@media ( max-width: 500px )
+    .svgIconNetflixBrand
+        fill: nth($colorSet, random(length($colorSet)))

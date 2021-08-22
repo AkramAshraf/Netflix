@@ -1,0 +1,40 @@
+$colorSet: (#fffb00, #3ef, #ffae00, #f3f, #03f7a6, #faa, #ff08f3)
+
+
+.exect 
+    >a
+        color: #fff !important
+.xs
+    a
+        color: #616161
+    @for $i from 0 through 14
+        .icon-#{$i}
+            $color: nth($colorSet, random(length($colorSet)))
+            color: $color
+            transition: opacity, transform .3s
+            opacity: 0
+            ~ a:hover
+                color: $color
+        &:hover .icon-#{$i}
+            opacity: 1
+            transform: scale(1.5)
+@media ( max-width: 576px )
+    .xs
+        width: 45% !important
+        border-bottom: 1px solid #272727
+        transition: all 1s
+        white-space: nowrap
+        >i
+            opacity: 0
+        &:hover
+            i
+                opacity: 1
+            background: #131313
+            box-shadow: inset 0px -12px 0px 0px #2525259c, inset 0px 12px 0px 0px #2525259c
+            a
+                transition: all 1s
+                color: #fff !important
+                transform: translateX(10px)
+@media ( max-width: 450px )
+    .xs
+        width: 100% !important

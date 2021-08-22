@@ -1,0 +1,32 @@
+.Ask
+    background: #000
+.Questions
+        .details
+            position: relative
+            // details[open] summary ~ * 
+            //     animation: sweep .5s linear alternate
+            // > summary::-webkit-details-marker
+            //     display: none
+            .summary, .p
+                background: #303030
+            .summary
+                &::-webkit-details-marker
+                    display: none
+                list-style: none
+                font-size: clamp(0.7rem, -0.875rem + 5vw, 2rem)
+                padding: 1rem 7vw 1rem 1rem !important
+                &::after
+                    position: absolute
+                    content: "+"
+                    top: 50%
+                    right: 5%
+                    transform: translate(-50%, -50%)
+                    cursor: pointer
+                ~ *
+                    animation: sweep 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate
+
+@keyframes sweep 
+from
+    transform: translateY(-20px)
+to
+    transform: translateY(0px)
