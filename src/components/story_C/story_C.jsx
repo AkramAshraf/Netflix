@@ -8,7 +8,7 @@ const Story=(props)=>{
         className={`${classes.storyItem} text-light border-top border-5 border-dark`}
       >
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center justify-content-center">
             <div
               className={`order-${Math.trunc(
                 Math.random() * 2
@@ -28,7 +28,7 @@ const Story=(props)=>{
               </article>
             </div>
             <div
-              className={`storyPresentation col-sm-12 col-lg-5 position-relative`}
+              className={`storyPresentation col-sm-12 col-md-5 position-relative`}
             >
               <img
                 src={props.story_data["story-presentation-img"]}

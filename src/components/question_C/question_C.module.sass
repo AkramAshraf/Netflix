@@ -3,13 +3,14 @@
 .Questions
         .details
             position: relative
-            // details[open] summary ~ * 
-            //     animation: sweep .5s linear alternate
-            // > summary::-webkit-details-marker
-            //     display: none
             .summary, .p
                 background: #303030
+            p
+                &::first-letter
+                    color: red
             .summary
+                box-shadow: inset 5px 0px 0px #f5f5f1
+                transition: all .5s
                 &::-webkit-details-marker
                     display: none
                 list-style: none
@@ -18,15 +19,19 @@
                 &::after
                     position: absolute
                     content: "+"
-                    top: 50%
-                    right: 5%
-                    transform: translate(-50%, -50%)
+                    top: 0
+                    line-height: 2
+                    right: 1rem
                     cursor: pointer
-                ~ *
-                    animation: sweep 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate
-
-@keyframes sweep 
-from
-    transform: translateY(-20px)
-to
-    transform: translateY(0px)
+                    font-size: calc(1.13rem + 2vw)
+                    font-family: auto
+                    transform: rotate(0deg)
+                    transition: all .5s
+details[open]
+    summary
+        box-shadow: inset 5px 0px 0px #e50914 !important
+        ~ *
+            transition: all .5s
+    .summary:after
+        transform: rotate(45deg) !important
+        color: #e50914
