@@ -5,6 +5,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
+
+import './global.sass'
 // Components
 import Progress from "./components/pageProgress_C/pageProgress";
 import Nav from "./components/nav_bar/Nav_C";

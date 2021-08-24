@@ -1,8 +1,7 @@
-$colorSet: (#10cab7, #3ef, #eae, #f3f)
 @use "sass:math"
+@use "sass:map"
+@import 'src/global.sass'
+
 .svgIconNetflixBrand
-    width: clamp(70px, 100px,200px)
-    fill:#e50914
-@media ( max-width: 500px )
-    .svgIconNetflixBrand
-        fill: nth($colorSet, random(length($colorSet)))
+    fill: map-get($colors, '-c-Red')
+    max-width: 10rem

@@ -33,16 +33,7 @@ const Story=(props)=>{
               <img
                 src={props.story_data["story-presentation-img"]}
                 alt=""
-                className=""
-                style={{
-                  position: "relative",
-                  top: "0",
-                  left: "0",
-                  width: "100%",
-                  height: "100%",
-                  zIndex: "2",
-                }}
-              />
+                className={classes['storyPresentation-img']} />
 
               <ReactPlayer
                 playing

@@ -4,7 +4,7 @@ import classes from "./Membership_C.module.sass";
 const Membership = (props) => {
   return (
     <Textfit className="text-center container mt-5" min={15}>
-      <p className="my-2" style={{ fontSize: "calc(0.7rem + 1vw)" }}>
+      <p className="my-2 p-size">
         Ready to watch? Enter your email to create or restart your membership.
       </p>
       <div className="form-floating d-flex justify-content-center flex-sm-column align-items-sm-center flex-lg-row">

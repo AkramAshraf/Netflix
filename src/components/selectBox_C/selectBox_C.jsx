@@ -1,24 +1,12 @@
-import { Fragment } from "react";
+import { Fragment } from "react"
+import classes from './selectBox_C.module.sass'
 const SelectBox=(props)=>{
     return (
       <Fragment>
         <select
-          className="fa"
+          className={`fa ${classes.selectBox} selectBox-size`}
           name="selectLang"
           id="lang"
-          style={{
-            flex: "0 1 35%",
-            maxWidth: "130px",
-            minWidth: "fit-content",
-            marginRight: "3%",
-            minHeight: "calc(1.3rem + 2.2vh)",
-            padding: ".2rem",
-            appearance: "none",
-            outline: "none",
-            textAlignLast: "center",
-            fontSize:
-              "clamp(calc(0.6em + 1vmin), calc(0.5em + 1vmin), calc(1em + 1vmin))",
-          }}
         >
           {props.selectOptions.langs.map((language) => (
             <option key={language} value={language}>

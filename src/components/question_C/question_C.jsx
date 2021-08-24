@@ -3,7 +3,7 @@ import classes from "./question_C.module.sass";
 const Questions = (props) => {
   return (
     <>
-      <div className="question" style={{ background: "#000" }}>
+      <div className={classes.question} >
         <div className="container">
           <div className={`row d-flex flex-column`}>
             <div className={`${classes.Questions} text-light py-3`}>

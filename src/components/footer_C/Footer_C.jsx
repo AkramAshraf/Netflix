@@ -4,10 +4,7 @@ import SelectBox from "../selectBox_C/selectBox_C";
 const Footer = (props) => {
   return (
     <Fragment>
-      <footer
-        className=" border-top border-5 border-dark"
-        style={{ background: "#000", padding: "3rem 3rem 0.1rem 3rem" }}
-      >
+      <footer className={`${classes.footer} border-top border-5 border-dark`}>
         <div className="container">
           <nav className="row list-unstyled g-5">
             <li className={`${classes.exect} mb-4 p-0`}>
