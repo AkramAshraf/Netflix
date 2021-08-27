@@ -1,5 +1,6 @@
 import { Fragment } from "react";
-import classes from "./Footer_C.module.sass";
+import {NavLink} from 'react-router-dom'
+import classes from "./_Footer_C.module.sass";
 import SelectBox from "../selectBox_C/selectBox_C";
 const Footer = (props) => {
   return (
@@ -7,7 +8,7 @@ const Footer = (props) => {
       <footer className={`${classes.footer} border-top border-5 border-dark`}>
         <div className="container">
           <nav className="row list-unstyled g-5">
-            <li className={`${classes.exect} mb-4 p-0`}>
+            <li className={`${classes.exect} mb-4`}>
               <a href="$" className={`text-decoration-none`}>
                 Questions? Contact us.
               </a>
@@ -26,9 +27,9 @@ const Footer = (props) => {
                     {props.footerLinks[key]}
                   </i>
 
-                  <a href="#s" className={`text-decoration-none`}>
+                  <NavLink to={key} className={`text-decoration-none`}>
                     {key}
-                  </a>
+                  </NavLink>
                 </li>
               );
             })}

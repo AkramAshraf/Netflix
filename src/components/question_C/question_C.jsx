@@ -1,5 +1,5 @@
 import Ask from "./Ask_subC";
-import classes from "./question_C.module.sass";
+import classes from "./_question_C.module.sass";
 const Questions = (props) => {
   return (
     <>

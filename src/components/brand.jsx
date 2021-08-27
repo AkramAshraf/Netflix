@@ -1,5 +1,4 @@
 import { Component, Fragment } from "react";
-import classes from "./_brand.module.sass";
 class Brand extends Component {
 
   // componentDidMount = () => {
@@ -21,7 +20,7 @@ class Brand extends Component {
             viewBox="0 0 111 30"
             focusable="false"
             id="brand"
-            className={classes.svgIconNetflixBrand}
+            className='svgIconNetflixBrand'
           >
             <g>
               <path

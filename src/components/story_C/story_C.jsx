@@ -1,4 +1,4 @@
-import classes from "./story_C.module.sass";
+import classes from "./_story_C.module.sass";
 import Textfit from "react-textfit";
 import ReactPlayer from "react-player";
 const Story=(props)=>{

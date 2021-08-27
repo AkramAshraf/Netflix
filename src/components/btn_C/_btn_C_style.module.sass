@@ -1,5 +1,6 @@
+@import '../../bootstrap-customize.scss'
 .main_btn
-    background: var(--bgColor,#e50914)
+    background: map-get($theme-colors, 'Blood')
     white-space: nowrap
     border-radius: 0
     color:#fff
@@ -19,4 +20,4 @@
             transition: all .3s ease-in-out
 .bgFade
     &:hover
-        box-shadow: inset 0px 0px 0px 50px #ffffff59
+        filter: brightness(.9)

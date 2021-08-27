@@ -1,6 +1,6 @@
 import Btn from "../btn_C/btn_C_structure";
 import { Textfit } from "react-textfit";
-import classes from "./Membership_C.module.sass";
+import classes from "./_Membership_C.module.sass";
 const Membership = (props) => {
   return (
     <Textfit className="text-center container mt-5" min={15}>
@@ -15,16 +15,11 @@ const Membership = (props) => {
         />
 
         <Btn
-          btn_data={{
-            content: `Sign in`,
-            icon: "",
-            iconDisplacement: "false",
-            bgColor: "red",
-            fontSize: "",
-            bgFade: "false",
-            btnNum: "0",
-            col: "0",
-          }}
+          content='Sign in'
+          icon= ""
+          iconDisplacement= "false"
+          bgColor= ""
+          bgFade= "true"
         />
       </div>
     </Textfit>

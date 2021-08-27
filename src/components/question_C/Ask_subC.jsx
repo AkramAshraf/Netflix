@@ -1,5 +1,5 @@
 import { Component } from "react";
-import classes from "./question_C.module.sass";
+import classes from "./_question_C.module.sass";
 class Ask extends Component {
   render() {
     return (
