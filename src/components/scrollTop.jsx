@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 
-class Scrollbar extends Component {
+class scrollTop extends Component {
   componentDidMount() {
     window.addEventListener("scroll", () => {
       let $Y1 = window.pageYOffset,
           traffic = document.getElementById("traffic");
-
       $Y1 > 500
         ? (traffic.style.transform = "translateX(0px)")
-        : (traffic.style.transform = "translateX(60px)");
+        : (traffic.style.transform = "translateX(100px)");
     });
   }
   render() {
@@ -41,4 +40,4 @@ class Scrollbar extends Component {
   }
 }
 
-export default Scrollbar;
+export default scrollTop;

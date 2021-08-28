@@ -6,7 +6,7 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 // Components
-import Scrollbar from "../components/Scrollbar";
+import scrollTop from "../components/scrollTop.jsx";
 import PROGRESS_X from '../components/X_Progress';
 import Btn from "../components/btn_C/btn_C_structure";
 import SelectBox from "../components/selectBox_C/selectBox_C";
@@ -42,13 +42,13 @@ class Home extends Component {
     return (
       <Fragment>
         <PROGRESS_X />
-        <Scrollbar />
+        <scrollTop />
         {/* Navbar Start */}
         <div className="position-absolute w-100">
           <div className="container">
-            <nav className="navbar">
+            <nav className="navbar" style={{height: '50px'}}>
               <Brand />
-              <form className="d-flex col-8 col-md-6 justify-content-end">
+              <form className="d-flex col-8 col-md-6 justify-content-end" style={{height: '100%', lineHeight: '1'}}>
                 <SelectBox
                   selectOptions={{
                     langs: [

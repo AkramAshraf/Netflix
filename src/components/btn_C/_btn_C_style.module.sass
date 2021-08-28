@@ -5,7 +5,8 @@
     border-radius: 0
     color:#fff
     flex: 0 1 30%
-    max-width: 100px
+    max-width: 70px
+    line-height: 0
     border: none
     min-width: fit-content
     font-size: calc(.5rem + 1vw)
@@ -15,9 +16,8 @@
         color: #fff
         box-shadow: none
         .iconDisplacement
-            display: inline-block
-            transform: translateX(60%)
-            transition: all .3s ease-in-out
+            transform: translate(60%,0)
+            transition: transform .3s ease-in-out
 .bgFade
     &:hover
         filter: brightness(.9)

@@ -34,9 +34,6 @@ a{
   font-size: clamp(0.7rem, -0.875rem + 5vw, 2rem);
 }
 
-.selectBox-size {
-  font-size: clamp(calc(0.6em + 1vmin), calc(0.5em + 1vmin), calc(1em + 1vmin));
-}
 
 $theme-colors: map-merge($theme-colors, $Netflix-Brand-colors);
 

@@ -7,20 +7,27 @@ const Membership = (props) => {
       <p className="my-2 p-size">
         Ready to watch? Enter your email to create or restart your membership.
       </p>
-      <div className="form-floating d-flex justify-content-center flex-sm-column align-items-sm-center flex-lg-row">
+      <div
+        className={`${classes.formFloating} form-floating row justify-content-center`}
+      >
         <input
-          className={classes.emailField}
+          className={`${classes.emailField} col-9`}
           type="email"
           placeholder="Example@gmail.com"
         />
 
-        <Btn
-          content='Get Started'
-          icon= "fas fa-chevron-right"
-          iconDisplacement= "true"
-          bgColor= ""
-          bgFade= "false"
-        />
+        <div
+          className='col-3 my-2 my-sm-2 my-md-0'
+          style={{ all: "inherit" }}
+        >
+          <Btn
+            content="Get Started"
+            icon="fas fa-chevron-right"
+            iconDisplacement="true"
+            bgColor=""
+            bgFade="false"
+          />
+        </div>
       </div>
     </Textfit>
   );

@@ -15,12 +15,16 @@ class Brand extends Component {
   render() {
     return (
       <Fragment>
-        <a href="2" className="navbar-brand col-3 col-md-3 m-0">
+        <a
+          href="2"
+          className="navbar-brand col-3 col-md-3 m-0"
+          style={{ height: "100%", lineHeight: "1" }}
+        >
           <svg
             viewBox="0 0 111 30"
             focusable="false"
             id="brand"
-            className='svgIconNetflixBrand'
+            className="svgIconNetflixBrand"
           >
             <g>
               <path
