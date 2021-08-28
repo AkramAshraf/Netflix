@@ -1,6 +1,6 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
 
-class Progress extends Component {
+class x_Progress extends Component {
   componentDidMount() {
     window.addEventListener("scroll", () => {
       let $Y1 = window.pageYOffset,
@@ -20,7 +20,10 @@ class Progress extends Component {
         >
           <div
             id="gohead"
-            style={{ background: "red" }}
+            style={{
+              background: "#e50914",
+              // "linear-gradient(to right, rgb(247, 220, 27), #fd4b4b, rgb(145, 0, 255))",
+            }}
             role="progressbar"
             aria-valuenow="25"
             aria-valuemin="0"
@@ -32,4 +35,4 @@ class Progress extends Component {
   }
 }
 
-export default Progress;
+export default x_Progress;

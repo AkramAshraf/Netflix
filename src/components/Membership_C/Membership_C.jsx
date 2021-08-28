@@ -15,11 +15,11 @@ const Membership = (props) => {
         />
 
         <Btn
-          content='Sign in'
-          icon= ""
-          iconDisplacement= "false"
+          content='Get Started'
+          icon= "fas fa-chevron-right"
+          iconDisplacement= "true"
           bgColor= ""
-          bgFade= "true"
+          bgFade= "false"
         />
       </div>
     </Textfit>

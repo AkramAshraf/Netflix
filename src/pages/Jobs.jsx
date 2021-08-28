@@ -1,11 +1,11 @@
 import { Component } from "react";
-import Progress from "../components/pageProgress_C/pageProgress";
+import PROGRESS_X from "../components/X_Progress";
 class Jobs extends Component {
   state = {};
   render() {
     return (
       <>
-        <Progress />
+        <PROGRESS_X />
         <h1>Jobs</h1>
       </>
     );

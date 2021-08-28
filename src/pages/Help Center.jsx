@@ -1,12 +1,12 @@
 import { Component } from 'react'
-import Progress from '../components/pageProgress_C/pageProgress'
+import PROGRESS_X from "../components/X_Progress";
 class MediaCenter extends Component {
     state = {  }
     render() { 
         return (
           <>
-            <Progress />
-            <h1>Media Center</h1>
+            <PROGRESS_X />
+            <h1>Help Center</h1>
           </>
         );
     }

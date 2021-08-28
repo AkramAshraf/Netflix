@@ -6,7 +6,8 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 // Components
-import Progress from "../components/pageProgress_C/pageProgress";
+import Scrollbar from "../components/Scrollbar";
+import PROGRESS_X from '../components/X_Progress';
 import Btn from "../components/btn_C/btn_C_structure";
 import SelectBox from "../components/selectBox_C/selectBox_C";
 import Brand from "../components/brand";
@@ -40,7 +41,8 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
-        <Progress />
+        <PROGRESS_X />
+        <Scrollbar />
         {/* Navbar Start */}
         <div className="position-absolute w-100">
           <div className="container">
@@ -67,10 +69,10 @@ class Home extends Component {
                 />
                 <Btn
                   content="Sign in"
-                  icon="fas fa-adjust"
-                  iconDisplacement="true"
-                  bgColor="red"
-                  bgFade="true"
+                  icon=""
+                  iconDisplacement="false"
+                  bgColor=""
+                  bgFade="false"
                 />
               </form>
             </nav>
