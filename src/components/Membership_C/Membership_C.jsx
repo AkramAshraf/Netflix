@@ -7,7 +7,10 @@ const Membership = (props) => {
       <p className="my-2 p-size">
         Ready to watch? Enter your email to create or restart your membership.
       </p>
-      <div
+      <form
+        action="main.php"
+        method="post"
+        formNoValidate={true}
         className={`${classes.formFloating} form-floating row justify-content-center`}
       >
         <input
@@ -16,19 +19,16 @@ const Membership = (props) => {
           placeholder="Example@gmail.com"
         />
 
-        <div
-          className='col-3 my-2 my-sm-2 my-md-0'
-          style={{ all: "inherit" }}
-        >
+        <div className="col-3 my-2 my-sm-2 my-md-0" style={{ all: "inherit" }}>
           <Btn
             content="Get Started"
             icon="fas fa-chevron-right"
             iconDisplacement="true"
             bgColor=""
-            bgFade="false"
+            bgFade="true"
           />
         </div>
-      </div>
+      </form>
     </Textfit>
   );
 };

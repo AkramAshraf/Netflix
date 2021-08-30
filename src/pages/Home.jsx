@@ -6,8 +6,6 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 // Components
-import scrollTop from "../components/scrollTop.jsx";
-import PROGRESS_X from '../components/X_Progress';
 import Btn from "../components/btn_C/btn_C_structure";
 import SelectBox from "../components/selectBox_C/selectBox_C";
 import Brand from "../components/brand";
@@ -21,7 +19,10 @@ import {
   FaRegHandshake,
   FaBalanceScaleRight,
 } from "react-icons/fa";
-import { BsLock, BsListCheck } from "react-icons/bs";
+import {
+  BsLock,
+  BsListCheck,
+} from "react-icons/bs";
 import {
   IoSpeedometerOutline,
   IoInformationCircleOutline,
@@ -34,21 +35,21 @@ import { SiVlcmediaplayer } from "react-icons/si";
 import { BiCookie } from "react-icons/bi";
 
 // bootstrap customization
-import "../bootstrap-customize.scss";
-
+import "../_bootstrap-customize.scss";
 class Home extends Component {
   state = {};
   render() {
     return (
       <Fragment>
-        <PROGRESS_X />
-        <scrollTop />
         {/* Navbar Start */}
         <div className="position-absolute w-100">
           <div className="container">
-            <nav className="navbar" style={{height: '50px'}}>
+            <nav className="navbar" style={{ height: "45px" }}>
               <Brand />
-              <form className="d-flex col-8 col-md-6 justify-content-end" style={{height: '100%', lineHeight: '1'}}>
+              <form
+                className="d-flex col-8 col-md-6 justify-content-end"
+                style={{ height: "100%", lineHeight: "1" }}
+              >
                 <SelectBox
                   selectOptions={{
                     langs: [
@@ -71,7 +72,6 @@ class Home extends Component {
                   content="Sign in"
                   icon=""
                   iconDisplacement="false"
-                  bgColor=""
                   bgFade="false"
                 />
               </form>
@@ -162,7 +162,9 @@ class Home extends Component {
         <Questions>
           <Membership />
         </Questions>
+        <footer className='border-top border-5 border-dark p-3 bg-dark'>
         <Footer
+          footer_top="Questions? Contact us."
           footerLinks={{
             FAQ: <FaQuoteLeft />,
             "Help Center": <IoHelp />,
@@ -180,7 +182,9 @@ class Home extends Component {
             "Legal Notices": <FaBalanceScaleRight />,
             "Only on Netflix": <RiNetflixLine />,
           }}
+          footer_foot="Netflix Egypt"
         />
+        </footer>
       </Fragment>
     );
   }

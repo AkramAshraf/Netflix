@@ -5,12 +5,11 @@ import SelectBox from "../selectBox_C/selectBox_C";
 const Footer = (props) => {
   return (
     <Fragment>
-      <footer className={`${classes.footer} border-top border-5 border-dark`}>
         <div className="container">
           <nav className="row list-unstyled g-5">
             <li className={`${classes.exect} mb-4`}>
               <a href="$" className={`text-decoration-none`}>
-                Questions? Contact us.
+                {props.footer_top}
               </a>
             </li>
             {Object.keys(props.footerLinks).map((key, index) => {
@@ -54,9 +53,8 @@ const Footer = (props) => {
               />
             </li>
           </nav>
-          <p className="text-secondary my-4">Netflix Egypt</p>
+          <p className="text-secondary my-4">{props.footer_foot}</p>
         </div>
-      </footer>
     </Fragment>
   );
 };

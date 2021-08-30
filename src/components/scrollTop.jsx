@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class scrollTop extends Component {
+class ScrollTop extends Component {
   componentDidMount() {
     window.addEventListener("scroll", () => {
       let $Y1 = window.pageYOffset,
@@ -40,4 +40,4 @@ class scrollTop extends Component {
   }
 }
 
-export default scrollTop;
+export default ScrollTop;

@@ -15,7 +15,7 @@ class x_Progress extends Component {
     return (
       <>
         <div
-          className="progress"
+          className="progress d-lg-none"
           style={{ height: "3px", position: "fixed", zIndex: 23, top: 0 }}
         >
           <div

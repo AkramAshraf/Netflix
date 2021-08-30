@@ -1,22 +1,15 @@
 @import '../../bootstrap-customize.scss'
 .main_btn
+    color: map-get($theme-colors, 'Milk')
     background: map-get($theme-colors, 'Blood')
     white-space: nowrap
-    border-radius: 0
-    color:#fff
-    flex: 0 1 30%
     max-width: 70px
-    line-height: 0
     border: none
     min-width: fit-content
-    font-size: calc(.5rem + 1vw)
-    padding: calc(.5rem + 0.3vw)
-    transition: transform .3s ease-in-out
-    &:hover, &:focus, &:focus+.btn
-        color: #fff
-        box-shadow: none
+    font-size: clamp(1px,14px,calc(.5rem + 1vw))
+    &:is(:hover, :focus, :focus+.btn)
         .iconDisplacement
-            transform: translate(60%,0)
+            transform: translate(50%,0)
             transition: transform .3s ease-in-out
 .bgFade
     &:hover

@@ -1,30 +1,15 @@
 import { Component, Fragment } from "react";
 class Brand extends Component {
 
-  // componentDidMount = () => {
-  //   if (window.innerWidth <= 500) {
-  //     setInterval(() => {
-  //       let brand = document.getElementById("brand"),
-  //         picker = ["#ffd32a", "#3ef", "#eae", "#f3f"],
-  //         randColor = picker[Math.ceil(Math.random() * picker.length)];
-  //       brand.style.fill = randColor;
-  //     }, 2000);
-  //   }
-  // };
-
   render() {
     return (
       <Fragment>
-        <a
-          href="2"
-          className="navbar-brand col-3 col-md-3 m-0"
-          style={{ height: "100%", lineHeight: "1" }}
-        >
+        <a href="2" class="navbar-brand col m-0">
           <svg
             viewBox="0 0 111 30"
             focusable="false"
             id="brand"
-            className="svgIconNetflixBrand"
+            class="svgIconNetflixBrand d-none d-sm-inline-block"
           >
             <g>
               <path
@@ -32,6 +17,38 @@ class Brand extends Component {
                 id="Fill-14"
               ></path>
             </g>
+          </svg>
+
+          <svg
+            className="d-sm-none"
+            focusable="true"
+            viewBox="225 0 552 1000"
+            height="32px"
+          >
+            <defs>
+              <radialGradient
+                id="54260309-7575-46f4-a806-31673acf60fe-a"
+                r="75%"
+                gradientTransform="matrix(.38 0 .5785 1 .02 0)"
+              >
+                <stop offset="60%" stop-opacity=".3"></stop>
+                <stop offset="90%" stop-opacity=".05"></stop>
+                <stop offset="100%" stop-opacity="0"></stop>
+              </radialGradient>
+            </defs>
+            <path
+              d="M225 0v1000c60-8 138-14 198-17V0H225"
+              fill="#b1060e"
+            ></path>
+            <path d="M579 0v983c71 3 131 9 198 17V0H579" fill="#b1060e"></path>
+            <path
+              d="M225 0v200l198 600V557l151 426c76 3 136 9 203 17V800L579 200v240L423 0H225"
+              fill="url(#54260309-7575-46f4-a806-31673acf60fe-a)"
+            ></path>
+            <path
+              d="M225 0l349 983c76 3 136 9 203 17L423 0H225"
+              fill="#e50914"
+            ></path>
           </svg>
         </a>
       </Fragment>

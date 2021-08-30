@@ -11,9 +11,7 @@ let Btn = (props) => {
     if (props.bgFade === "true") {
       btn[i].classList.add(`${btnStyle.bgFade}`);
       }
-      if (props.bg !== true) {
-        btn[i].style.background = `${props.bgColor}`;
-      }
+      
     }
     
   };
@@ -23,12 +21,11 @@ let Btn = (props) => {
     <button
       onMouseEnter={iconDisplacement}
       id="main_btn"
-      className={`${btnStyle.main_btn} fw-bold`}
+      className={`${btnStyle.main_btn} fw-bold ms-2 p-2`}
       type="submit"
-      
+      style={props.style}
     >
-      {props.content}{" "}
-      <i id="main_btn_icon" className={props.icon}></i>
+      {props.content} <i id="main_btn_icon" className={props.icon}></i>
     </button>
   );
 };
