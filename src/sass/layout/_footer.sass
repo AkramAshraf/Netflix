@@ -1,0 +1,37 @@
+$colorSet: (#fffb00, #3ef, #ffae00, #f3f, #03f7a6, #faa, #ff08f3)
+
+.exect
+    border-left: 5px solid red
+    padding: 10px !important
+    >a
+        color: #fff !important
+.xs
+    a
+        color: #616161
+        width: 100%
+        white-space: nowrap
+        &:hover
+            transition: all 1s
+            transform: translateX(10px)
+    @for $i from 0 through 14
+        .icon-#{$i}
+            $color: nth($colorSet, random(length($colorSet)))
+            color: $color
+            transition: opacity, transform .3s
+            opacity: 0
+            height: 100%
+            line-height: 1
+            text-align: center
+            ~ a:hover
+                color: $color
+        &:hover .icon-#{$i}
+            opacity: 1
+@media ( max-width: 576px )
+    .xs
+        width: 45% !important
+@media ( max-width: 450px )
+    .xs
+        width: 100% !important
+@media ( min-width: 500px )
+    .exect
+        background: linear-gradient(to right, #ffffff1f 3%, transparent)

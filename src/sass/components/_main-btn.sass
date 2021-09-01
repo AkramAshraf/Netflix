@@ -1,0 +1,16 @@
+@import '../../_bootstrap-customize.scss'
+.main_btn
+    color: map-get($theme-colors, 'Milk')
+    background: map-get($theme-colors, 'Blood')
+    white-space: nowrap
+    max-width: 70px
+    border: none
+    min-width: fit-content
+    font-size: clamp(1px,14px,calc(.5rem + 1vw))
+    &:is(:hover, :focus, :focus+.btn)
+        .iconDisplacement
+            transform: translate(50%,0)
+            transition: transform .3s ease-in-out
+.bgFade
+    &:hover
+        filter: brightness(.9)
